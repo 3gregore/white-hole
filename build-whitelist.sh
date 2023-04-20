@@ -2,11 +2,13 @@
 
 echo "" > Pihole-Whitelist.sh
 
-#Whitelist
+#Pi-Hole Community Whitelist
+wget https://raw.githubusercontent.com/3gregore/white-hole/main/common_urls.txt
+#Anudeep - Whitelist
 wget https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt
-#Optional
+#Anudeep - Optional
 wget https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt
-#Referral Sites
+#Anudeep - Referral Sites
 wget https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt
 
 for f in $(ls)
